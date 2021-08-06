@@ -11,7 +11,7 @@ class GalleriesController < ApplicationController
     if gallery.save
       render json: gallery
     else
-      render json: { errors: gallery.errors.full_messsages }, status: 422
+      render json: { errors: gallery.errors.full_messages }, status: 422
     end
   end
 end
