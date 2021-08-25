@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   get "/images/:id" => "images#show"
   get "/users/:id" => "users#show" #this will use current_user to show the gallery information for the logged in user
   post "/galleries" => "galleries#create"
+  get "/galleries/:id" => "galleries#show"
+  patch "/galleries/:id" => "galleries#update"
+  delete "/galleries/:id" => "galleries#destroy"
   get "/users" => "users#index"
 end
